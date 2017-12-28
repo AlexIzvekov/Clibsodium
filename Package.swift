@@ -6,6 +6,7 @@ let package = Package(
     name: "libsodium",
     pkgConfig: "libsodium",
     providers: [
-		.Apt("libsodium-dev")
+	    .brew(["libsodium"]),
+	    .apt(["libsodium-dev"])
 	]
 )
