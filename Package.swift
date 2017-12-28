@@ -4,5 +4,9 @@ import PackageDescription
 
 let package = Package(
     name: "libsodium",
-    pkgConfig: "libsodium"
+    pkgConfig: "libsodium",
+    providers: [
+		.Brew("libsodium"),
+		.Apt("libsodium-dev")
+	]
 )
