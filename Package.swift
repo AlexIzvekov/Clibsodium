@@ -6,7 +6,6 @@ let package = Package(
     name: "libsodium",
     pkgConfig: "libsodium",
     providers: [
-		.Brew("libsodium"),
 		.Apt("libsodium-dev")
 	]
 )
